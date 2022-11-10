@@ -10,7 +10,7 @@ import dagger.hilt.components.SingletonComponent
 
 @Module
 @InstallIn(SingletonComponent::class)
-class RepoModule {
+object RepoModule {
 
     @Provides
     fun getPhotoRepo(photoService: PhotoService):PhotoRepository = PhotoRepoImpl(photoService)
