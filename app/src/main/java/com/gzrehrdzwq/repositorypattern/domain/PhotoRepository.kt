@@ -6,5 +6,5 @@ import retrofit2.Response
 
 interface PhotoRepository {
 
-    suspend fun getAlbums(): NetworkResponse<PhotoResponse>
+    suspend fun getAlbums(): PhotoResponse
 }
